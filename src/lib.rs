@@ -353,9 +353,9 @@ impl CellType for usize {} // for tests
 #[derive(Debug, Clone)]
 pub struct Cell<T: CellType> {
     /// Position for the cell (row, column)
-    pos: (u32, u32),
+    pub pos: (u32, u32),
     /// Value for the cell
-    val: T,
+    pub val: T,
 }
 
 impl<T: CellType> Cell<T> {

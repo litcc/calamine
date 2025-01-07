@@ -198,13 +198,13 @@ pub struct Xlsx<RS> {
     /// Merged Regions: Name, Sheet, Merged Dimensions
     merged_regions: Option<Vec<(String, String, Dimensions)>>,
     /// Reader options
-    options: XlsxOptions,
+    pub options: XlsxOptions,
 }
 
 /// Xlsx reader options
 #[derive(Debug, Default)]
 #[non_exhaustive]
-struct XlsxOptions {
+pub struct XlsxOptions {
     pub header_row: HeaderRow,
 }
 
